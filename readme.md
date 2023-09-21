@@ -38,7 +38,7 @@ It is very important for aws users to monitor and audit its users. In IAM this c
 - Always assign users to group and then assign polices to it.
 - Create strong password policy and try to enforce the use of MFA (mutli factor authentication).
 - Use access key for programmatic access (sdk/cli).
-- Always audit permissions of your account using ***IAM credentials report*** and ***IAM access advisor***.
+- Always audit permissions of your account using [***IAM credentials report***](#iam-security-and-auditing) and [***IAM access advisor***](#iam-security-and-auditing).
 
 ![IAM](./public/diagrams/iam.svg)
 
