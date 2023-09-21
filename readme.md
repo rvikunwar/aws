@@ -40,6 +40,6 @@ It is very important for aws users to monitor and audit its users. In IAM this c
 - Use access key for programmatic access (sdk/cli).
 - Always audit permissions of your account using ***IAM credentials report*** and ***IAM access advisor***.
 
-[IAM](./public/diagrams/iam.svg)
+![IAM](./public/diagrams/iam.svg)
 
 
