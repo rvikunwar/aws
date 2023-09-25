@@ -46,5 +46,5 @@ It is very important for aws users to monitor and audit its users. In IAM this c
 EC2 stands for elastic compute cloud, it is a virtual server used for running applications on aws infrastucture.
 _Knowing EC2 is fundamental to understanding how cloud works_
 
-[EC2 Sizing](./public/diagrams/ec2/ec2_options.svg)
+![EC2 Sizing](./public/diagrams/ec2/ec2_options.svg)
 
