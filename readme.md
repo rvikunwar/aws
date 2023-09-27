@@ -48,3 +48,45 @@ _Knowing EC2 is fundamental to understanding how cloud works_
 
 ![EC2 Sizing](./public/diagrams/ec2/ec2_options.svg)
 
+## EC2 user data
+EC2 user data is used to automate boot tasks such as installing updates, downloading common files, starting web servers.
+It is basically a script which runs only once when the instance first starts.
+
+## EC2 Instance type
+The aws instances types are as follows:
+1. [**General purpose instances**](#general-purpose-instances)
+2. [**Compute optimized instances**](#compute-optimized-instances)
+3. [**Memory optimized instances**](#memory-optimized-instances)
+4. [**Storage optimized instances**](#storage-optimized-instances)
+5. [**Accelerated computing instances**](#accelerated-computing-instances)
+
+### General purpose instances
+- These are the instances with balanced computational, memory and networking resources.
+- It's utilized where your application does not required any enchanced optimization in any particular resource area.
+- General purpose instances are utilized for small gaming servers, small data centers and for personal projects.
+- Examples of general purpose instances - t2.micro, m6a instance
+- Application - web server, CDN (content deliver network), development and test environment, practice and learning.
+
+### Compute optimized instances
+- These are the instances with heavy CPU computational power.
+- These are employed for high scaling web server, game server, machine learning models, batch processing workloads
+- Example - c5d.24large
+
+### Memory optimized instances
+- Memory optimized instances are used to compute large datasets in memory (RAM).
+- Basically it is used to run application which requires a lot of memory with high performance.
+- Generally deployed to run application that requires real time processing of a significant volume of data.
+- Examples - R7g.medium
+- Application - In memory database, big data processing
+
+### Storage optimized instances
+- These are created for workloads which requires high and fast sequential read and write access to huge database.
+- Example - Im4Gn
+
+### Accelerated computing instances
+- These are utilized for applications which requires graphical computations.
+- Basically used to execute specific operation more effectively than normal CPU's.
+- Application - to compute floating point calculation, pattern matching, graphical processing.
+
+
+***AWS Free tier offer free t2.micro general purpose instance upto the certain limit of 750 hours per month***
