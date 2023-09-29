@@ -1,4 +1,7 @@
-<img src="./public/amazonaws.svg">
+<div style="display: flex; justify-content: center;">
+  <img width="50%" src="./public/amazonaws.svg"/>
+</div>
+
 
 # AWS
 Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use. This blog will help you understand different services and resources that aws provides. This is incomplete, currently contains content that I have learned so far, I will update this from time to time.
@@ -90,3 +93,5 @@ The aws instances types are as follows:
 
 
 ***AWS Free tier offer free t2.micro general purpose instance upto the certain limit of 750 hours per month***
+
+
