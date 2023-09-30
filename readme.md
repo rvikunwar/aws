@@ -94,4 +94,12 @@ The aws instances types are as follows:
 
 ***AWS Free tier offer free t2.micro general purpose instance upto the certain limit of 750 hours per month***
 
+# Security group
+Security group are essential part of security within the AWS ecosystem. It is used to control how traffic is allowed into or out of aws ecosystem. Basically it acts an firewall for aws. It is very important for users to understand how and when to use security group because they are directly responsible for the security of their application and it's security group in aws that helps them to achieve this.
 
+## Don't and Do's with Security groups
+- Don't allow all inbound access (0.0.0.0/0) to aws, try to restrict neccessary ip from accessing aws resources.
+- Don't allow all outbound access (0.0.0.0/0) to aws, try to restrict neccessary ip from outbound access.
+- Don't create security group one each for ec2 instance, try to use some strategy to combine similar usage entity into a single security group.
+- Try to enforce a security group for each and every aws resources.
+- Always try to restrict traffic appropriately, don't rely on default security rules.
