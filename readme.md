@@ -94,6 +94,40 @@ The aws instances types are as follows:
 
 ***AWS Free tier offer free t2.micro general purpose instance upto the certain limit of 750 hours per month***
 
+![Instances size](./public/diagrams/ec2/instances_size.svg)
+## EC2 instance purchasing options
+Following are the purchasing options that ec2 provides for it's users -
+1. [**EC2 on demand**](#ec2-on-demand)
+2. [**EC2 reserved**](#ec2-reserved-instances)
+3. [**Scheduled reserved instances**](#general-purpose-instances)
+4. [**Spot instances**](#general-purpose-instances)
+5. [**Dedicated instances**](#general-purpose-instances)
+6. [**Dedicated host**](#general-purpose-instances)
+7. [**EC2 capacity reservations**](#general-purpose-instances)
+8. [**Saving plans**](#general-purpose-instances)
+
+
+### EC2 on demand
+- Pay for what you use.
+- It has highest cost but no upfront payment.
+- It does not have long term commitment.
+
+### EC2 Reserved Instances
+- It helps to reduce cloud spends.
+- Aws gives 72% discount on these types of instances as compared to On-demand.
+- It is the most economical option for increasing profits.
+- Reserved instances are best suited if consistent heavy use is expected.
+- Reserved instances are same as On-demand instances but with a heavy discount and reserved for certain period of time.
+- Once purchased, the reservation cannot be cancelled but you can sell it on reserved instance marketplace.
+- Payment option - no upfront, partial upfront or all upfront.
+- Reserved instances has four variable that determine it's price -  instance type (t2.micro, m4.large), region, tenancy (shared(default) or single-tenant) and platform  (os- windows, linux).
+- Commitment - 1 year or 3 years
+- Classes - ***standard*** and ***convertible***
+_Standard provides more discount but can be modified whereas convertible has lower discount rates but it can be exchanged with other convertible reserved instance with different attributes and it can also be modified._
+- modification - Availability zone, instance size (within a same instance family) and scope can be modified.
+- Two or more reserved instances can be merged ito single reserved instances
+
+
 # Security group
 Security group are essential part of security within the AWS ecosystem. It is used to control how traffic is allowed into or out of aws ecosystem. Basically it acts an firewall for aws. It is very important for users to understand how and when to use security group because they are directly responsible for the security of their application and it's security group in aws that helps them to achieve this.
 
