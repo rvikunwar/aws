@@ -115,6 +115,7 @@ Following are the purchasing options that ec2 provides for it's users -
 ### EC2 Reserved Instances
 - It helps to reduce cloud spends.
 - Aws gives 72% discount on these types of instances as compared to On-demand.
+- It provides discount based on committed utilization of resources for a certain period of time.
 - It is the most economical option for increasing profits.
 - Follow billed by hour model.
 - Reserved instances are best suited if consistent heavy use is expected.
@@ -124,12 +125,13 @@ Following are the purchasing options that ec2 provides for it's users -
 - Reserved instances has four variable that determine it's price -  instance type (t2.micro, m4.large), region, tenancy (shared(default) or single-tenant) and platform  (os- windows, linux).
 - Commitment - 1 year or 3 years
 - Classes - ***standard*** and ***convertible***<br/>
-_Standard provides more discount but can be modified whereas convertible has lower discount rates but it can be exchanged with other convertible reserved instance with different attributes and it can also be modified._
+_Standard provides more discount but can be modified (within a same family) whereas convertible has lower discount rates but it can be exchanged with other convertible reserved instance with different attributes and it can also be modified._
 - modification - Availability zone, instance size (within a same instance family) and scope can be modified.
 - Two or more reserved instances can be merged ito single reserved instances.
 
 ### EC2 Saving plans
 - It is similar to reserved instance but provides more flexibility.
+- It provides dicount based on amount of money you commit to spending on aws resources per hour.
 - Saving plan offer multiple location/region and usage types, when needed we can repurpose ec2 instance and transfer whole workload across instance types regardless of os and tenancy where as in reserved instances we could use reserved standard instances with various instances types but we need to have linux os and default tenancy.
 - Saves upto 72% on ec2 instances as compared to on-demand ec2 instances.
 - Payment - all upfront, partial upfront, no upfront.
