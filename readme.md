@@ -99,12 +99,12 @@ The aws instances types are as follows:
 Following are the purchasing options that ec2 provides for it's users -
 1. [**EC2 on demand**](#ec2-on-demand)
 2. [**EC2 reserved**](#ec2-reserved-instances)
-3. [**Scheduled reserved instances**](#general-purpose-instances)
-4. [**Spot instances**](#general-purpose-instances)
-5. [**Dedicated instances**](#general-purpose-instances)
-6. [**Dedicated host**](#general-purpose-instances)
-7. [**EC2 capacity reservations**](#general-purpose-instances)
-8. [**Saving plans**](#general-purpose-instances)
+3. [**Saving plans**](#ec2-saving-plans)
+4. [**Scheduled reserved instances**](#general-purpose-instances)
+5. [**Spot instances**](#general-purpose-instances)
+6. [**Dedicated instances**](#general-purpose-instances)
+7. [**Dedicated host**](#general-purpose-instances)
+8. [**EC2 capacity reservations**](#general-purpose-instances)
 
 
 ### EC2 on demand
@@ -116,16 +116,26 @@ Following are the purchasing options that ec2 provides for it's users -
 - It helps to reduce cloud spends.
 - Aws gives 72% discount on these types of instances as compared to On-demand.
 - It is the most economical option for increasing profits.
+- Follow billed by hour model.
 - Reserved instances are best suited if consistent heavy use is expected.
 - Reserved instances are same as On-demand instances but with a heavy discount and reserved for certain period of time.
 - Once purchased, the reservation cannot be cancelled but you can sell it on reserved instance marketplace.
 - Payment option - no upfront, partial upfront or all upfront.
 - Reserved instances has four variable that determine it's price -  instance type (t2.micro, m4.large), region, tenancy (shared(default) or single-tenant) and platform  (os- windows, linux).
 - Commitment - 1 year or 3 years
-- Classes - ***standard*** and ***convertible***
+- Classes - ***standard*** and ***convertible***<br/>
 _Standard provides more discount but can be modified whereas convertible has lower discount rates but it can be exchanged with other convertible reserved instance with different attributes and it can also be modified._
 - modification - Availability zone, instance size (within a same instance family) and scope can be modified.
-- Two or more reserved instances can be merged ito single reserved instances
+- Two or more reserved instances can be merged ito single reserved instances.
+
+### EC2 Saving plans
+- It is similar to reserved instance but provides more flexibility.
+- Saving plan offer multiple location/region and usage types, when needed we can repurpose ec2 instance and transfer whole workload across instance types regardless of os and tenancy where as in reserved instances we could use reserved standard instances with various instances types but we need to have linux os and default tenancy.
+- Saves upto 72% on ec2 instances as compared to on-demand ec2 instances.
+- Payment - all upfront, partial upfront, no upfront.
+- Commitment - 1 year or 3 year.
+- After the completion of commitment if not renewed, the instances will cost as per on-demand ec2 instances.
+- Aws offers three types of saving plans - ***Ec2 instance saving plan***, ***Compute saving plan*** and ***Amazon sage maker saving plan***.
 
 
 # Security group
