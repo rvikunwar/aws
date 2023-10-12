@@ -101,9 +101,9 @@ Following are the purchasing options that ec2 provides for it's users -
 2. [**EC2 reserved**](#ec2-reserved-instances)
 3. [**Saving plans**](#ec2-saving-plans)
 4. [**Scheduled reserved instances**](#general-purpose-instances)
-5. [**Spot instances**](#general-purpose-instances)
-6. [**Dedicated instances**](#general-purpose-instances)
-7. [**Dedicated host**](#general-purpose-instances)
+5. [**Dedicated instances**](#general-purpose-instances)
+6. [**Dedicated host**](#general-purpose-instances)
+7. [**Spot instances**](#general-purpose-instances)
 8. [**EC2 capacity reservations**](#general-purpose-instances)
 
 
@@ -139,6 +139,27 @@ _Standard provides more discount but can be modified (within a same family) wher
 - After the completion of commitment if not renewed, the instances will cost as per on-demand ec2 instances.
 - Aws offers three types of saving plans - ***Ec2 instance saving plan***, ***Compute saving plan*** and ***Amazon sage maker saving plan***.
 
+### Dedicated instance
+- These instances run in a VPC on hardware that's dedicated to a single customer. - The instance is physically isolated at the host hardware level from instance that belongs to other AWS accounts.
+- These instances may share hardware with other instances belonging to same AWS account.
+- Paying on-demand can save up to 70% by purchasing reversed instaces or can save up to 90% by purchasing spot instances.
+- Generally used for security reason, because a dedicated instance will be the only resource on the server, so no one else will be able to access your server and snoop about checking out your data.
+
+### Dedicated hosts
+- Dedicated instances reserve the entire server while if we use dedicated host it allows us to reserve an entire server and run additional EC2 instances at the same time.
+- Provides visibility of the number of sockets and physical cores.
+- Provides additional visibilty and control over how instances are placed on a physical server.
+- We can deploy our instances with different and controlled configurations.
+
+### Spot instances
+- These are those instances which are in not use, so AWS provides them to user at a discounted price due to extra capacity availability. But these comes at risk because AWS can pull these off whenever required with a 2 min timer.
+- The prices varies depending upon demand.
+- Can reduce cost upto 90% of on demand EC2 instance.
+- Used for Machine learning, CI/CD operations, Big data, Batch scripting and training.
+- Spot capacity pool - A set of unsed EC2 instances
+- Spot price - The current price of a spot instance per hour/
+- Spot instance request - Requests a spot instance, when capacity is available, Amazon EC2 fulfills your requests.
+- Spot instance interruption - Amazon EC2 terminates, stops or hibernate your instance when Amazon needs the capacity back. Amazon provides a notice before 2 min of interrupted.
 
 # Security group
 Security group are essential part of security within the AWS ecosystem. It is used to control how traffic is allowed into or out of aws ecosystem. Basically it acts an firewall for aws. It is very important for users to understand how and when to use security group because they are directly responsible for the security of their application and it's security group in aws that helps them to achieve this.
