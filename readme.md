@@ -101,9 +101,9 @@ Following are the purchasing options that ec2 provides for it's users -
 2. [**EC2 reserved**](#ec2-reserved-instances)
 3. [**Saving plans**](#ec2-saving-plans)
 4. [**Scheduled reserved instances**](#general-purpose-instances)
-5. [**Dedicated instances**](#general-purpose-instances)
-6. [**Dedicated host**](#general-purpose-instances)
-7. [**Spot instances**](#general-purpose-instances)
+5. [**Dedicated instances**](#dedicated-instances)
+6. [**Dedicated host**](#dedicated-hosts)
+7. [**Spot instances**](#spot-instances)
 8. [**EC2 capacity reservations**](#general-purpose-instances)
 
 
