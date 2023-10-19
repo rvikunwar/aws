@@ -1,10 +1,25 @@
-<div style="display: flex; justify-content: center;">
-  <img width="50%" src="./public/amazonaws.svg"/>
-</div>
+<p align="center">
+  <img width="30%" src="./public/amazonaws.svg"/>
+</p>
 
 
 # AWS
 Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use. This blog will help you understand different services and resources that aws provides. This is incomplete, currently contains content that I have learned so far, I will update this from time to time.
+
+# Table of Contents
+
+- [IAM](#iam)
+  - [IAM Components](#iam-components)
+  - [How users can access AWS?](#how-users-can-access-aws)
+  - [IAM Security and auditing](#iam-security-and-auditing)
+  - [IAM Guidelines and best practices](#iam-guidelines-and-best-practices)
+- [EC2](#ec2) 
+  - [EC2 user data](#ec2-user-data)
+  - [EC2 Instance type](#ec2-instance-type)
+  - [EC2 instance purchasing options](#ec2-instance-purchasing-options)
+- [Security group](#security-group)
+  - [Don't and Do's with Security groups](#dont-and-dos-with-security-groups)
+- [EBS Volume](#ebs-volume)
 
 # IAM
 Identity and access management is a we service of aws which helps us to manage aws resources and let us define who and upto what limit they can access or use allocated aws resource under the supervision of certain rules.
@@ -170,3 +185,5 @@ Security group are essential part of security within the AWS ecosystem. It is us
 - Don't create security group one each for ec2 instance, try to use some strategy to combine similar usage entity into a single security group.
 - Try to enforce a security group for each and every aws resources.
 - Always try to restrict traffic appropriately, don't rely on default security rules.
+
+# EBS Volume
