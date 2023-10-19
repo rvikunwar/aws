@@ -187,3 +187,10 @@ Security group are essential part of security within the AWS ecosystem. It is us
 - Always try to restrict traffic appropriately, don't rely on default security rules.
 
 # EBS Volume
+- EBS stands for elastic store block. It is a network drive that can be attached to instances while they run.
+- It allows intances to persist data even after their termination.
+- EBS can be mounted to one instance at a time (at the Certified Cloud Practitioner(CCP) level). EBS can only have one instances at a time but instances can have multiple EBS attached to them at a moment.
+- EBS are bound to a specific availability zone. An EBS volume in us-east-1-a cannot be attached to us-east-1-b. To move volumes across zone, you need to take a snapshot.
+- It is a network drive means needs network to communicate with instance which result into latency.
+- With Free tier we can use upto 30 GB per month of EBS storage of type General purpose (SSD) or magnetic. 
+![EBS](./public/diagrams/ebs/ebs.svg)
