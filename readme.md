@@ -20,6 +20,8 @@ Amazon Web Services offers reliable, scalable, and inexpensive cloud computing s
 - [Security group](#security-group)
   - [Don't and Do's with Security groups](#dont-and-dos-with-security-groups)
 - [EBS Volume](#ebs-volume)
+- [EBS Snapshot](#ebs-snapshot)
+- [AMI overview](#ami-overview)
 
 # IAM
 Identity and access management is a we service of aws which helps us to manage aws resources and let us define who and upto what limit they can access or use allocated aws resource under the supervision of certain rules.
@@ -203,3 +205,17 @@ We can also take snapshot and can copy data across different Availability zone o
 
 ![EBS](./public/diagrams/ebs/ebs_snapshot.svg)
 
+# AMI overview
+- AMI stands for amazon machine image.
+- These are customized EC2 instance with pre installed softwares, configuration and operating system.
+  - This provides faster boot/configuration time because of all pre packaged softwares and configurations.
+- AMI are built for specific region but we can copy these across region.
+- We can launch EC2 instance from 
+  - Public AMI
+  - Our own self created AMI
+  - An AWS marketplace AMI
+- We can create AWS AMI using followings:
+  - Start an EC2 instance and customize it (add softwares, configurations etc...)
+  - then stop the instance 
+  - build an AMI from it, this will also create EBS snapshot.
+  - now, we can start our AMI as EC2 instance.
