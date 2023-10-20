@@ -195,3 +195,11 @@ Security group are essential part of security within the AWS ecosystem. It is us
 - With Free tier we can use upto 30 GB per month of EBS storage of type General purpose (SSD) or magnetic. 
 
 ![EBS](./public/diagrams/ebs/ebs.svg)
+
+
+# EBS Snapshot
+EBS snapshots are the backups for our EBS volumes taken at a point in time. These are also called incremental backup because only the blocks on device that have changed since last snapshot is taken as backups. This saves times to create snapshot and also helps to save storage cost by not duplicating data.
+We can also take snapshot and can copy data across different Availability zone or region. 
+
+![EBS](./public/diagrams/ebs/ebs_snapshot.svg)
+
