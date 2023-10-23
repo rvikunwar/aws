@@ -22,6 +22,8 @@ Amazon Web Services offers reliable, scalable, and inexpensive cloud computing s
 - [EBS Volume](#ebs-volume)
 - [EBS Snapshot](#ebs-snapshot)
 - [AMI overview](#ami-overview)
+- [EBS volume types](#ebs-volume-types)
+  - []
 
 # IAM
 Identity and access management is a we service of aws which helps us to manage aws resources and let us define who and upto what limit they can access or use allocated aws resource under the supervision of certain rules.
@@ -219,3 +221,32 @@ We can also take snapshot and can copy data across different Availability zone o
   - then stop the instance 
   - build an AMI from it, this will also create EBS snapshot.
   - now, we can start our AMI as EC2 instance.
+
+# EBS volume types
+AWS provides following ebs volume types based on performance, performance and storage capacity.
+- SSD (Solid State drive)
+  - General purpose SSD (gp2/gp3)
+    - Used for general purpose workload.
+    - Cost effective and low latency, ranges from size 1 Gib to 16 Tib.
+    - GP2
+      - maximum throughput of 160 MiB/s.
+      - provides a baseline performance of 3 IOPS per 1Gb storage.
+      - also have an ability to brust upto 3000 IOPS for volume size of less than 1 Tb and 16,000 IOPS at 5334 Gib.
+    - GP3
+      - provides a consistent baseline rate of 3,000 IOPS and 125 MiB/s.
+      - additional IOPS (upto 16,000) and throughput (upto 1,000 Mib/s) can be added for additional cost.
+  - Provisioned IOPS SSD (io1/io2)
+    - Used for intensive I/O workloads, like database workload (sensitive to storage and consistency).
+    - Used for critical business applications with sustained IOPS performance.
+    - Can be used for application which require more than 16,000 IOPS.
+    - IOPS rate can be specified when the volume is created.
+    - Size can range from 4Gib to 16Tib.
+    - have a throughput limit range of 256 Kib for each IOPS, upto a maximum of 600 MiB/s (at 32000 IOPS).
+- HDD (Hard disk drives)
+  - St1
+    - Throughput optimized HDD volumes provides low cost magnetic storage that defines performance in terms of throughput rather than IOPS.
+    - Is good for large, sequential workload such as data warehousing and log processing.
+  - Sc1
+    - Cold HDD volumes provides low cost magnetic storage that defines performance in terms of throughput rather than IOPS.
+    - It has lower throughput limit than St1 which makes it ideal for large cold sequential workload.
+
