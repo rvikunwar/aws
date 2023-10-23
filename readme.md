@@ -23,7 +23,6 @@ Amazon Web Services offers reliable, scalable, and inexpensive cloud computing s
 - [EBS Snapshot](#ebs-snapshot)
 - [AMI overview](#ami-overview)
 - [EBS volume types](#ebs-volume-types)
-  - []
 
 # IAM
 Identity and access management is a we service of aws which helps us to manage aws resources and let us define who and upto what limit they can access or use allocated aws resource under the supervision of certain rules.
