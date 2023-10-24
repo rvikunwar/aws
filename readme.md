@@ -283,6 +283,6 @@ EFS can handle wide range of workloads but the performance can be variable where
     - Ideal for shared file storage use cases - content management system, web serving and data sharing where instances need to access the same data concurrently.
     - Is used for data-intensive workloads and analytics applications where data needs to be processed and analyzed across multiple instances.
     - Is it also used for containerized environments like Amazon kubernetes service (EKS) to store configuration files and shared volume for containers.
-  -EBS
+  - EBS
     - Well suited for applications that require block storage - databases, transactional applications and boot volumes.
     - Data warehousing, Log storage (analysis and monitoring).
