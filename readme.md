@@ -23,6 +23,8 @@ Amazon Web Services offers reliable, scalable, and inexpensive cloud computing s
 - [EBS Snapshot](#ebs-snapshot)
 - [AMI overview](#ami-overview)
 - [EBS volume types](#ebs-volume-types)
+- [EFS](#efs)
+- [EFS v/s EBS](#efs-vs-ebs)
 
 # IAM
 Identity and access management is a we service of aws which helps us to manage aws resources and let us define who and upto what limit they can access or use allocated aws resource under the supervision of certain rules.
@@ -249,3 +251,38 @@ AWS provides following ebs volume types based on performance, performance and st
     - Cold HDD volumes provides low cost magnetic storage that defines performance in terms of throughput rather than IOPS.
     - It has lower throughput limit than St1 which makes it ideal for large cold sequential workload.
 
+# EFS
+EFS stands for elastic file system. It is fully managed storage provided by AWS and can be accessed by multiple EC2 instances concurrently.
+
+- It uses NFS (network file system) protocol.
+- Uses security group to control access to EFS.
+- Compatible with linux based AMI.
+- EFS can be accessed from multple availibilty zones in a same AWS region.
+
+![EFS](./public/diagrams/efs/efs.svg)
+
+
+# EFS v/s EBS
+
+- Storage
+EFS provides shared and fully managed file storage that can be accessed by multiple EC2 instances whereas we EBS storage can be attached to individual EC2 instance.
+
+- Access method
+EFS works on Network file system (NFS) protocol. It allows multiple EC2 instances to read and write to the same file system concurrently.
+EBS provides block level storage that is directly attached to a single EC2 instance.
+
+- Scalability
+EFS is highly scalable and we can grow or shrink its storage capacity as needed. 
+EBS volumes have fixed sizes and it can only be resized then we need to create snapshots of EBS volumes and then we have to create a larger volumes from those snapshots.
+
+- Performance
+EFS can handle wide range of workloads but the performance can be variable whereas EBS volumes comes in different types and we can choose the type according to our requirements. It provides better performance as compared to EFS volumes.
+
+- Use cases
+  - EFS
+    - Ideal for shared file storage use cases - content management system, web serving and data sharing where instances need to access the same data concurrently.
+    - Is used for data-intensive workloads and analytics applications where data needs to be processed and analyzed across multiple instances.
+    - Is it also used for containerized environments like Amazon kubernetes service (EKS) to store configuration files and shared volume for containers.
+  -EBS
+    - Well suited for applications that require block storage - databases, transactional applications and boot volumes.
+    - Data warehousing, Log storage (analysis and monitoring).
